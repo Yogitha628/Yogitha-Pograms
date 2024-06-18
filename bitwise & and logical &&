@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int a=15,b=16;
+    if(a>b&&++b)
+    {
+        printf("Hi");
+    }
+    printf("%d",b);
+
+    return 0;
+}
+output:16
