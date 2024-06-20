@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x,a,b;
+    scanf("%d%d%d",&x,&a,&b);
+    int cp=x*b;
+    int sp=x*a;
+    int p=(sp-cp)-100;
+    printf("%d",p);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
