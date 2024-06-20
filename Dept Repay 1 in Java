@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int p,r,y;
+        p=s.nextInt();
+        r=s.nextInt();
+        y=s.nextInt();
+        float i=(p*r*y)/100;
+        float a=p+i;
+        float d=(i*2)/100;
+        float f=a-d;
+        System.out.printf("%.2f\n%.2f\n%.2f\n%.2f\n",i,a,d,f);
+    }
+}
