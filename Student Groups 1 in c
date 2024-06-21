@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    if(a<100||a>200)
+    {
+        printf("INVALID INPUT");
+    }
+    else
+    {
+        int b=a/4;
+        int c=a%4;
+        printf("%d\n%d\n%d\n%d",b,b,b,b+c);
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
