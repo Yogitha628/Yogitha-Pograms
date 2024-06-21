@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    int r1=((a/10)*10)+10;
+    int r2=(a/10)*10;
+    int r3=a%10;
+    if(r3>=5)
+    {
+        printf("%d",r1);
+    }
+    else
+    {
+       printf("%d",r2); 
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
