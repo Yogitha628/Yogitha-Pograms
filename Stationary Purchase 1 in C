@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    float gst=0.00,net=0.0,discount=0.0;
+    printf("Quantity Ordered %d\n",a);
+    printf("Price per item is Rs.%d\n",b);
+    int total_amount=a*b;
+    printf("Total Amount = Rs.%d\n",total_amount);
+    if(a>200){
+        discount=(0.20)*total_amount;
+        net=total_amount-discount;
+        gst=(0.18)*net;
+        printf("Discount Earned = Rs.%.1f\n",discount);
+        printf("Amount after Discount - Rs.%.1f\n",net);
+        printf("GST - Rs.%.1f\n",gst);
+        printf("Net Amount Payable is Rs.%.1f",(net+gst));
+       
+    }
+    else{
+        gst=(0.18)*total_amount;
+        printf("GST - Rs.%.1f\n",gst);
+        printf("Net Amount Payable is Rs.%.1f",(total_amount+gst));
+    }
+
+    return 0;
+}
+
+   
