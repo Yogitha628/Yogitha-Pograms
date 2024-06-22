@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+    int term1=7;
+    int term2=5;
+    for(int i=0;i<n;i++)
+    {
+        if(i%2==0)
+        {
+            System.out.printf("%d ",term1);
+            term1=term1+1;
+        }
+        else
+        {
+            System.out.printf("%d ",term2);
+            term2=term2+1;
+        }
+    }
+    
+    }
+}
