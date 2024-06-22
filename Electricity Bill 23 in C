@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b;
+    scanf("%d",&a);
+    if(a<=200)
+    {
+        b=a*0.5;
+        printf("Rs.%d",b);
+    }
+    else 
+        if(a<=400)
+        {
+            b=(a*0.65)+100;
+            printf("Rs.%d",b);
+        }
+    else
+        if(a<=600)
+        {
+            b=a*0.80+200;
+            printf("Rs.%d",b);
+        }
+    else
+    {
+        b=a*1.25+425;
+        printf("Rs.%d",b);
+    }
+            
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
