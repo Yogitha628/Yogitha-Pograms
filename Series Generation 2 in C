@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,n;
+    scanf("%d",&n);
+    int term1=7;
+    int term2=5;
+    for(i=0;i<n;i++)
+    {
+        if(i%2==0)
+        {
+            printf("%d ",term1);
+            term1=term1+1;
+        }
+        else
+        {
+            printf("%d ",term2);
+            term2=term2+1;
+        }
+    }
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
