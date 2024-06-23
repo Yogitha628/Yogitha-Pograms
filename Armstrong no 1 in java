@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        boolean isArmstrong = checkArmstrong(n);
+        if (isArmstrong)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+
+    public static boolean checkArmstrong(int num) 
+    {
+        int originalNumber=num;
+        int sum = 0;
+        int numDigits = String.valueOf(num).length();
+        while(num>0) 
+        {
+            int digit=num%10;
+            sum+=Math.pow(digit,numDigits);
+            num/=10;
+        }
+
+        return sum==originalNumber;
+    }
+}
