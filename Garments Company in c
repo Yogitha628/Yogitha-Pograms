@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    int n,i,c=0;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+        int num=a[i];
+        for(int j=0;j*j<=num;j++){
+            if(j*j==num){
+                c++;
+            }
+        }
+    }
+    printf("%d",c);
+    return 0;
+}
